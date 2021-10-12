@@ -94,19 +94,16 @@ export default function Footer() {
                     heading = "Social Links"
                     links={[
                         {
-                        type:'Link',
                         title:"LinkedIn",
-                        path: "http://linkedin.com",
+                        path: "https://www.linkedin.com/in/beatrice-bodron-893816175/",
                     },
                     {
-                        type:'Link',
                         title:"Instagram",
-                        path: "http://instagram.com",
+                        path: "https://www.instagram.com/beatricebodron/?hl=ro",
                     },
                     {
-                        type:'Link',
                         title:"Facebook",
-                        path: "https://facebook.com",
+                        path: "https://www.facebook.com/B.Beatrisss/",
                     },
                     ]} />
                 </div>
