@@ -83,7 +83,7 @@ export default function ContactForm() {
                 />
                 </label> 
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" >Send</button>
             </form>
         </FormStyle>
     )

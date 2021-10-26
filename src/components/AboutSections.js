@@ -2,7 +2,7 @@ import React from 'react'
 import Mytext from './Mytext'
 import SectionTitle from './SectionTitle'
 import Button from './Button'
-import AboutImg from '../assets/about-sec-img.png'
+import AboutImg from '../assets/about-section.jpg'
 import styled from 'styled-components'
 
 
@@ -16,6 +16,12 @@ const AboutSectionStyle = styled.div`
     }
     .about__left,.about__right{
         flex: 1;
+    }
+
+    img{
+        margin-left: 200px;
+        width:60%;
+        
     }
 
     .section-title{
@@ -51,6 +57,7 @@ const AboutSectionStyle = styled.div`
         }
         .about__right{
             margin-top:3rem;
+            
         }
         .section-title{
             text-align:center;

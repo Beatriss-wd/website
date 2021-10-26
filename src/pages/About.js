@@ -1,16 +1,30 @@
 import React from 'react'
 import Mytext from '../components/Mytext'
-import Button from '../components/Button'
 import AboutImage from '../assets/about-me.jpg'
 import styled from 'styled-components'
 import AboutInfoItem from '../components/AboutInfoItem'
 import ContactBanner from '../components/ContactBanner'
 
 
-
-
 const AboutPageStyle = styled.div`
 padding: 7rem 0 10rem 0;
+a{
+        font-size:1.5rem;
+        background-color: ${(props) =>
+            props.outline ? 'transparent' : ' #BCB4B4'};
+        padding: .5em 1em;
+        border-radius: 8px;
+        text-decoration: none;
+        display:inline-block;
+        border: 2px solid #BCB4B4;
+        color: ${(props) => 
+            props.outline ? ' #BCB4B4' : 'black'};
+    }
+    @media only screen and (max-width: 768px){
+        a{
+            font-size:1.8rem;
+        }
+    }
 .top-section{
     display:flex;
     align-items: center;
@@ -93,13 +107,13 @@ export default function About() {
                     </h2>
                     <div className = "about-info">
                         <Mytext>
-                        I am from Grumazesti , Neamt but I moved to study in Cluj Napoca about 6 years ago , and it became my second home. Since childhood , I’ve been atracted to art and design and with time I’ve discovered that my dream job needs to include that. Even though my favorite colour is black , I am a very positive person who loves to smile and to make others smile.
+                        I am from Grumazesti , Neamt but I moved to study in Cluj Napoca about 6 years ago , and it became my second home. Since childhood , I’ve been atracted to art and design and with time I’ve realized that my dream job needs to include that. Even though my favorite colour is black , I am a very positive person who loves to smile and to make others smile.
                         <br/><br/>
-                        I started coding since I was in highschool,it was very interesting to me to discover that I also enjoy this domain but things were a little bit too technical by that time. When I was in my last year of college and I had to think about my bachelor’s degree project, I did a research about what can I do , and I’ve discovered the world of Front-End Development. It was such a pleasure for me to discover that I found the perfect combination between art and coding.
+                        I started coding since I was in highschool. It was very interesting to me to discover that I also enjoy this domain but things were a little bit too technical at that time. When I was in my last year of college and I had to think about my bachelor’s degree project, I did a research about what I can do , and I’ve discovered the world of Front-End Development. It was such a pleasure for me to realize that I found the perfect combination between art and coding.
                         <br/><br/>My dream is to perform in this domain , to make art on the internet and not only, to create new experiences for the world and why not , to become the best. It is time for me to show what I can do!<br/><br/>
                         </Mytext>
                     </div>
-                    <Button btnText="Download CV" btnLink='#'/>
+                    <a href='/cv/Bodron_Beatrice.pdf' download>Download CV</a>
                 </div>
                 <div className="right"> 
                 <img src={AboutImage} alt='about'/>
